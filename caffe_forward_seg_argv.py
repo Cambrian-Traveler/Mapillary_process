@@ -1,5 +1,11 @@
+# -*- coding:utf-8_*-
+"""
+@Time: 2019.01.01
+@Author: Cambrian-Traveler
+@Function: caffe model forward calculation
+"""
 from _future_ import division
-sys.path.insert(0, '/media/data1/wyq/caffe/python')
+sys.path.insert(0, '/data/caffe/python')
 import caffe
 import numpy as np
 import os
@@ -19,7 +25,7 @@ caffe.set_device(GPU_ID)
 crop_size = 288
 score_layer = 'score'
 save_dir = './'
-test_list = '/DATA/Seg10cData_TestSet/test.txt'
+test_list = '/data/test.txt'
 
 net_proto = '../deploy.prototxt'
 net_weights_path = '../models/'
